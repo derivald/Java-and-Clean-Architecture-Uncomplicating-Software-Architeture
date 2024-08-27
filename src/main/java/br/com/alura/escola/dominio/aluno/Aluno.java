@@ -24,24 +24,22 @@ public class Aluno {
 		
 	}
 
-	public CPF getCpf() {
-		return cpf;
+	public String getCpf() {
+		return cpf.getNumero();
 	}
 
 	public String getNome() {
 		return nome;
 	}
 
-	public Email getEmail() {
-		return email;
+	public String getEmail() {
+		return email.getEndereco();
 	}
 
-	public static void main(String[] args) {
-		Aluno a = new Aluno(new CPF("123"),
-				"Fulano da Silva", 
-				new Email("email"));
-	}
+	public List<Telefone> getTelefones() {
+		return telefones;
 	
+	}
 	
 
 }
